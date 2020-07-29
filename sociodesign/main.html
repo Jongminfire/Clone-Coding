@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link rel = "stylesheet" href = "style.css">
+        <title>SocioDesign ㅡ Design + Digital</title>
+    </head>
+    <body>
+        <!-- Header -->
+        <header>
+            <div id="logo">
+                <a onclick="fetchPage('main_content.html')">
+                <image src = "https://user-images.githubusercontent.com/51112542/88799522-95d78e00-d1e1-11ea-8eb8-0d6b51ff1aa2.png" style="width:75px; height:40px;"></image>
+                </a>
+            </div>
+            <div id="menu">
+                    <ul id="main_menu">
+                    <li><a onclick="fetchPage('projects.html')">Projects</a></li>   
+                    <li><a onclick="fetchPage('profile.html')">Profile</a></li>
+                    <li><a onclick="fetchPage('contact.html')">Contact</a></li>
+                    </ul>
+
+                    <ul id="subscribe_menu">
+                    <li>
+                    <a href = "#">Subscribe</a>
+                    </li>
+                    </ul>
+            </div>
+        </header>
+
+        <div class ="main">
+        <div class = "content">
+            <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Knnox.jpg" style="padding-top:20px;"></image>
+        </div>
+
+        <div class = "tweet">
+            <div>Latest Tweet</div>
+            <div>
+                <a href = "https://twitter.com/aessestudio" style = "color:rgb(184,184,184)">@aessestudio</a>
+                <a href = "https://twitter.com/hypetype" style = "color:rgb(184,184,184)">@hypetype</a> Thanks for the post Alessandro 😌
+                <p>9:00 PM Mar 26th</p>
+            </div>
+        </div>
+        <hr>
+        <div class = "footer">
+            <div class="left_footer">
+                <div>
+                    SocioDesign<br>
+                    Design + Digital
+                </div>
+                <div>
+                    1-5 Clerkenwell Road,<br>
+                    London, EC1M 5PA
+                </div>
+                <div>
+                    info@sociodesign.co.uk<br>
+                    +44 (0)20 7336 6044
+                </div>
+            </div>
+            <div class ="sns_button">
+                SNS icons will be here
+            </div>
+        </div>
+        </div>
+        <script src = "fetchPage.js"></script>      <!-- fetch api 이용한 page 이동 -->
+    </body>
+</html>
