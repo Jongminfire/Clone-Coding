@@ -1,1 +1,40 @@
-<image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Knnox.jpg" style="padding-top:20px;"></image>
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .grid-container{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            grid-gap:10px;
+        }
+
+        #two{
+            display:grid;
+            grid-column:1 / 2;
+            grid-row:2 / 4;
+        }
+
+        .grid-container div:hover{
+            filter:brightness(50%);
+        }
+    </style>
+</head>
+<body>
+    <div class ="grid-container">
+    <div>
+        <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Knnox.jpg"></image>
+    </div>
+    <div>
+        <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Capital_2.jpg"></image>
+    </div>
+    <div id="two">
+        <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Chaos.jpg" style="height:100%"></image>
+    </div>
+    <div>
+        <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_BC.jpg"></image>
+    </div>
+    <div>
+        <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Twice.jpg"></image>
+    </div>
+</div>
+</body>
