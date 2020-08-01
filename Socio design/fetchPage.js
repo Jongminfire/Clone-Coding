@@ -12,3 +12,5 @@ function fetchPage(name){
     });
   })
   }
+
+  fetchPage("main_content.html");           // 초기 컨텐츠
