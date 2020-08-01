@@ -8,33 +8,71 @@
             grid-gap:10px;
         }
 
-        #two{
+        #AN-container{
+            position:relative;
             display:grid;
-            grid-column:1 / 2;
-            grid-row:2 / 4;
+            grid-column:2 / 3;
+            grid-row:1 / 3;
         }
 
-        .grid-container div:hover{
-            filter:brightness(50%);
+        #sonos-container{
+            position:relative;
+        }
+
+        #hedeker-container{
+            position:relative;
+        }
+
+        .grid-container div:hover img{
+            filter:brightness(40%);
+        }
+
+        .grid-container div:hover p{
+            display:block;
+        }
+
+        .grid-container p{
+            display:none;   /* hover 될 때만 보이게 */
+
+            position:absolute;  /* 이미지 위에 텍스트 넣기 */
+
+            top:50%;
+            left:50%;
+            transform: translate(-50%, -50%);  /* 텍스트 이미지 중앙배치 */
+
+            text-align:center;
+            color:white;
+            font-size:larger;
+            font-size:medium;
+
+            /* 밑줄 */
+            padding-bottom:3px;
+            border-bottom:1px solid white;
         }
     </style>
 </head>
 <body>
-    <div class ="grid-container">
     <div>
         <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Knnox.jpg"></image>
     </div>
-    <div>
-        <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Capital_2.jpg"></image>
+    <div class ="grid-container" style="margin-top:20px;">
+    <div id = "sonos-container">
+        <a href="#">
+            <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/03/Image_11_-.jpg"></image>
+            <p>Sonos</p>
+        </a>
     </div>
-    <div id="two">
-        <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Chaos.jpg" style="height:100%"></image>
+    <div id = "hedeker-container">
+        <a href = "#">
+            <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2016/05/Hedeker_Macro.png"></image>
+            <p>Hedeker</p>
+        </a>
     </div>
-    <div>
-        <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_BC.jpg"></image>
-    </div>
-    <div>
-        <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Twice.jpg"></image>
+    <div id="AN-container">
+        <a href = "#">
+            <image src = "https://user-images.githubusercontent.com/51112542/89042888-a3784980-d382-11ea-8605-adfeabcaa22c.jpg" style="height:100%"></image>
+            <p>A.N. Other</p>
+        </a>
     </div>
 </div>
 </body>
