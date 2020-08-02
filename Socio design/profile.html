@@ -1,43 +1,72 @@
-<pre>
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .design-strategy{
+            display:flex;
+            justify-content:space-between;
+        }
 
+        .design-strategy div{
+            width:50%;
+        }
 
+        .profile-content{
+            display:flex;
+            justify-content:space-between;
+        }
 
+        .profile-content div{
+            width:50%;
+        }
 
+        .profile-image{
+            display:grid;
+            height:auto;
+            grid-template-columns:1fr 1fr;
+            grid-gap:1em;
+        }
 
+        .profile-image img{
+            height:100%;
+        }
 
+    </style>
+</head>
+<body>
+    <div class="design-strategy">
+        <div>
+            <h3>Design+<br>
+                Strategy</h3>
+        </div>
+        <div>
+            <p>SocioDesign are an experienced design and strategy agency based in Farringdon, London. We help transform brands and businesses through carefully crafted design and rigorous strategic thinking.</p>
+        </div>
+    </div>
 
+    <div class="profile-content">
+        <div>
+            <h2>What we do</h2>
+            <p>We create contemporary brand identities, packaging solutions and digital experiences for a diverse range of premium brands, ranging from boutique start-ups to global businesses. Our minimal, reductive style of design allows clients to create clarity and transform their brands into powerful cross-cultural assets. This global appeal has lead us to work with discerning clients across a wide range of sectors and geographic locations. We currently work with organisations in  London, Los Angeles, New York, San Francisco, Paris, Beijing and Melbourne who continue to collaborate with us to deliver their creative and strategic ambitions.</p>
+        </div>
+        <div>
+            <h2>Our approach</h2>
+            <p>We approach every project with passion and dedication, applying meticulous detail, skill and craftsmanship to every stage of our design and strategic process. This tailored approach is driven by our clients aspirations and business objectives, allowing us to reduce the superfluous and deliver functional, enduring and effective design solutions. Our approach is informed by a combination of explorative and instinctive techniques coupled with sound strategic thinking. This contrasting perspective enables us to create consistent and measurable results whilst ensuring our work is well balanced and fit for purpose.</p>
+        </div>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-    
-
-<center>
-<h1>profile</h1>
-</center>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</pre>
+    <div class="profile-image">
+        <div style="grid-column-start:1; grid-column-end:3;">
+            <img src="https://sociodesign.co.uk/base/wp-content/uploads/2013/12/Studio_1.jpg">
+        </div>
+        <div style="grid-row-start:2; grid-row-end:4;">
+            <img src="https://sociodesign.co.uk/base/wp-content/uploads/2013/12/signage.jpg">
+        </div>
+        <div style="grid-column-start:2; grid-column-end:3;">
+            <img src="https://sociodesign.co.uk/base/wp-content/uploads/2013/12/Studio_4.jpg">
+        </div>
+        <div style ="grid-column-start:2; grid-column-end:3;">
+            <img src="https://sociodesign.co.uk/base/wp-content/uploads/2013/12/Studio_2.jpg">
+        </div>
+    </div>
+</body>
