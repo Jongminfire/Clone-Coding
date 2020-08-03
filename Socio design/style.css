@@ -27,6 +27,13 @@ header{
     z-index:1;         /* 헤더 z-index 맨 앞 */
 }
 
+.subscribe-container{
+    display:none;
+    height:150px;
+    background-color:white;
+    padding:0px 4% 0px 4%;
+}
+
 header #main_menu{
     display:flex;
     align-content:flex-start;
@@ -67,7 +74,7 @@ header a{
 
 #subscribe_menu{
     text-decoration:underline;
-    margin-right:2em;
+    margin-right:5em;
 }
 
 .main{
