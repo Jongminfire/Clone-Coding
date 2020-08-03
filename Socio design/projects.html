@@ -1,43 +1,113 @@
-<pre>
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        .projects-container{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            column-gap:1%;
+            row-gap:0.5%;
+        }
 
+        .projects-container img{
+            width:100%;
+            height:auto;
+        }
+        
+        .projects-container div:hover img{
+            filter:brightness(40%);
 
+        }
 
+        .projects-container div:hover p{
+            display:block;
+        }
 
+        .projects-container div{
+            position:relative;
+        }
 
+        .projects-container div p{
+            display:none;   /* hover 될 때만 보이게 */
 
+            position:absolute;  /* 이미지 위에 텍스트 넣기 */
 
+            top:45%;   
+            left:50%;
+            transform: translate(-50%, -50%);  /* 텍스트 이미지 중앙배치 */
 
+            text-align:center;
+            color:white;
+            font-size:larger;
+            font-size:medium;
 
-
-
-
-
-
-
-
-
-
-    
-
-    <center>
-    <h1>projects</h1>
-    </center>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </pre>
+            /* 밑줄 */  
+            padding-bottom:3px;
+            border-bottom:1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="projects-container" style="margin-bottom:5%;">
+        <div>
+            <a href="#">
+                <image src="https://sociodesign.co.uk/base/wp-content/uploads/2018/06/KNNOX-thumb-700x394.jpg"></image>
+                <p>Knnox</p>
+            </a>
+        </div>
+        <div>
+            <a href = "#">
+                <image src="https://sociodesign.co.uk/base/wp-content/uploads/2018/08/Graces_Thumb_Final_Crop-700x394.jpg"></image>
+                <p>The graces</p>
+            </a>
+        </div>
+        <div>
+            <a href = "#">
+                <image src="https://sociodesign.co.uk/base/wp-content/uploads/2017/12/ANO_2_thb-700x394.jpg"></image>
+                <p>A.N Other</p>
+            </a>
+        </div>
+        <div>
+            <a href = "#">
+                <image src="https://sociodesign.co.uk/base/wp-content/uploads/2018/03/Sonos_Thumb-700x394.jpg"></image>
+                <p>Sonos</p>
+            </a>
+        </div>
+        <div>
+            <a href = "#">
+                <image src="https://sociodesign.co.uk/base/wp-content/uploads/2016/05/Hedeker_Thumb-700x394.png"></image>
+                <p>Hedeker</p>
+            </a>
+        </div>
+        <div>
+            <a href = "#">
+                <image src="https://sociodesign.co.uk/base/wp-content/uploads/2018/11/TG_Thumb_Final_Crop-700x394-700x394.jpg"></image>
+                <p>Tea & Glory</p>
+            </a>
+        </div>
+        <div>
+            <a href = "#">
+                <image src="https://sociodesign.co.uk/base/wp-content/uploads/2016/09/SS_Thumb-700x394.jpg"></image>
+                <p>Stevenson System</p>
+            </a>
+        </div>
+        <div>
+            <a href = "#">
+                <image src="https://sociodesign.co.uk/base/wp-content/uploads/2016/08/AO-Thumb-A-1600-72-700x394.jpg"></image>
+                <p>Chaos Fashion</p>
+            </a>
+        </div>
+        <div>
+            <a href = "#">
+                <image src="https://sociodesign.co.uk/base/wp-content/uploads/2016/08/AO-Thumb-A-1600-72-700x394.jpg"></image>
+                <p>Arabain Oud</p>
+            </a>
+        </div>
+        <div>
+            <a href = "#">
+                <image src="https://sociodesign.co.uk/base/wp-content/uploads/2016/05/Capital_Thumb-700x394.png"></image>
+                <p>Capital Magazine</p>
+            </a>
+        </div>
+    </div>
+</body>
