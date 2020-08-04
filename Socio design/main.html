@@ -8,6 +8,26 @@
         <title>SocioDesign ㅡ Design + Digital</title>
     </head>
     <body>
+        <div class = "subscribe-container">
+            <div>
+                X
+            </div>
+            <div>
+                <div>
+                    <p>Socio Newsletter</p>
+                    <p>Subscribe to our newsletter to stay informed about our latest work and studio news. As well as information on current positions and internships.</p>
+                </div>
+                <div>
+                    <div>
+                        Name Email
+                    </div>
+                    <div>
+                        <input type="button" value="Submit">
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Header -->
         <header>
             <div id="logo">
@@ -17,15 +37,13 @@
             </div>
             <div id="menu">
                     <ul id="main_menu">
-                    <li><a onclick="fetchPage('projects.html')" style="cursor:pointer;">Projects</a></li>   
-                    <li><a onclick="fetchPage('profile.html')" style="cursor:pointer;">Profile</a></li>
-                    <li><a onclick="fetchPage('contact.html')" style="cursor:pointer;">Contact</a></li>
+                    <li><a onclick="fetchPage('projects.html');" style="cursor:pointer;">Projects</a></li>   
+                    <li><a onclick="fetchPage('profile.html');" style="cursor:pointer;">Profile</a></li>
+                    <li><a onclick="fetchPage('contact.html');" style="cursor:pointer;">Contact</a></li>
                     </ul>
 
                     <ul id="subscribe_menu">
-                    <li>
-                    <a href = "#">Subscribe</a>
-                    </li>
+                        <a onclick="slide();" style="cursor:pointer;">Subscribe</a>
                     </ul>
             </div>
         </header>
@@ -58,10 +76,15 @@
                 </div>
             </div>
             <div class ="sns_button">
-                SNS icons will be here
+                <img src="https://image.flaticon.com/icons/svg/81/81609.svg" onclick="window.open('https://twitter.com/SocioDesign')" type="_blank" style="cursor:pointer;" width="30px">
+                &nbsp;
+                <img src="https://user-images.githubusercontent.com/51112542/89304143-1138b400-d6a8-11ea-859a-1fedbfb9464c.png" onclick="window.open('https://www.linkedin.com/company/socio-design')" style="cursor:pointer;" width="30px">
+                &nbsp;
+                <img src="https://images.vexels.com/media/users/3/131142/isolated/preview/42686c238da2892da4bdea221bada9a6-instagram-flat-icon-by-vexels.png" onclick="window.open('http://instagram.com/sociodesign')" style="cursor:pointer;" width="30px">
             </div>
         </div>
         </div>
         <script src = "fetchPage.js"></script>      <!-- fetch api 이용한 page 이동 -->
+        <script src = "slide.js"></script>
     </body>
 </html>
