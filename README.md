@@ -8,5 +8,5 @@
 
 - #### Google : https://jongminfire.github.io/Clone-Coding/Socio%20design/main.html
 
-- #### Socio Design : [https://jongminfire.github.io/Clone-Coding/Socio%20design/main.html](https://jongminfire.github.io/Clone-Coding/Socio design/main.html)
+- #### Socio Design : https://jongminfire.github.io/Clone-Coding/Socio%20design/main.html
 
