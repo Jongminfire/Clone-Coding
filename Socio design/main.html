@@ -8,43 +8,57 @@
         <title>SocioDesign ㅡ Design + Digital</title>
     </head>
     <body>
-        <div class = "subscribe-container">
-            <div>
-                X
-            </div>
-            <div>
-                <div>
-                    <p>Socio Newsletter</p>
-                    <p>Subscribe to our newsletter to stay informed about our latest work and studio news. As well as information on current positions and internships.</p>
-                </div>
-                <div>
-                    <div>
-                        Name Email
-                    </div>
-                    <div>
-                        <input type="button" value="Submit">
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Header -->
         <header>
-            <div id="logo">
-                <a onclick="fetchPage('main_content.html')" style="cursor:pointer;">
-                <image src = "https://user-images.githubusercontent.com/51112542/88799522-95d78e00-d1e1-11ea-8eb8-0d6b51ff1aa2.png" style="width:75px; height:40px;"></image>
-                </a>
+            <div class = "subscribe-container" style="display:none;">
+                <div style="height:5em;">
+                    <a onclick="slide()" style="cursor:pointer; font-size:40px; float:right;"> x </a>
+                </div>
+                <div class ="subscribe-content">
+                    <div style="padding-bottom:2em; border-bottom:1px solid #F2F2F2;">
+                        <p>Socio Newsletter</p>
+                        <p style="color:#BBC1D3; padding-right:40%;">Subscribe to our newsletter to stay informed about our latest work and studio news. As well as information on current positions and internships.
+                    </div>
+                    <div class= "submit-container">
+                        <div class="submit-textarea">
+                            <div class="name-container">
+                                <p style="margin:0px; padding:0px;">Name</p>
+                                <br>
+                                <input id="sub-textarea" type="text">
+                            </div>
+                            <div class="email-container">
+                                <p style="margin:0px; padding:0px;">Email</p>
+                                <br>
+                                <input id="sub-textarea" type="text">
+                            </div>
+                        </div>
+                        <div class="button-container">
+                            <div><p style="margin:0px; padding:0px; width:100%;">&nbsp</p></div>
+                            <br>
+                            <div id="submit-button">
+                                <p>Submit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="menu">
-                    <ul id="main_menu">
-                    <li><a onclick="fetchPage('projects.html');" style="cursor:pointer;">Projects</a></li>   
-                    <li><a onclick="fetchPage('profile.html');" style="cursor:pointer;">Profile</a></li>
-                    <li><a onclick="fetchPage('contact.html');" style="cursor:pointer;">Contact</a></li>
-                    </ul>
+            <div class="menu-container">
+                <div id="logo">
+                    <a onclick="fetchPage('main_content.html');" style="cursor:pointer;">
+                    <image src = "https://user-images.githubusercontent.com/51112542/88799522-95d78e00-d1e1-11ea-8eb8-0d6b51ff1aa2.png" style="width:75px; height:40px;"></image>
+                    </a>
+                </div>
+                <div id="menu">
+                        <ul id="main_menu">
+                        <li><a id ="project-menu" onclick="fetchPage('projects.html');" style="cursor:pointer;">Projects</a></li>   
+                        <li><a id ="profile-menu" onclick="fetchPage('profile.html');" style="cursor:pointer;">Profile</a></li>
+                        <li><a id ="contact-menu" onclick="fetchPage('contact.html');" style="cursor:pointer;">Contact</a></li>
+                        </ul>
 
-                    <ul id="subscribe_menu">
-                        <a onclick="slide();" style="cursor:pointer;">Subscribe</a>
-                    </ul>
+                        <ul id="subscribe_menu">
+                            <a onclick="slide();" style="cursor:pointer;">Subscribe</a>
+                        </ul>
+                </div>
             </div>
         </header>
         <div class ="main">
