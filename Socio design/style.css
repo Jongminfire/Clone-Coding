@@ -16,36 +16,117 @@ a:visited{
 
 header{
     position:fixed;     /* 헤더 상단 고정 */
+    display:grid;
+    grid-template-rows:1fr 1fr;
     min-width:1024px;
     width:100%;
     height:5.5em;
     background-color:white;
-    flex-direction:row;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
     z-index:1;         /* 헤더 z-index 맨 앞 */
 }
 
-.subscribe-container{
-    display:none;
-    height:150px;
+header .subscribe-container{
+    display:flex;
+    top:0px;
+    width:auto;
+    flex-direction:column;
+    height:15em;
     background-color:white;
     padding:0px 4% 0px 4%;
+    font-size:13px;
 }
 
-header #main_menu{
+.subscribe-content{
+    display:flex;
+    width:100%;
+    justify-content:spcae-between;
+}
+
+header .subscribe-content div{
+    width:50%;
+}
+
+header .menu-container{
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    height:5.5em;
+    justify-content:space-between;
+    background-color:white;
+    align-items:center;
+}
+
+#sub-textarea{
+    width:168px;
+    height:35px;
+    background-color:#F2F2F2;
+    border:none;
+    border-radius:5px;
+    padding:0px 10px 0px 10px;
+    font-size:15px;
+    outline:none;           /* focus시 outline 제거 */
+    resize:none;            /* 크기조절 변경불가 */
+}
+
+#sub-textarea:focus{
+    border:1px solid #E2E2E2;
+}
+
+.menu-container #main_menu{
     display:flex;
     align-content:flex-start;
 }
 
-header div{
+.menu-container div{
     width:50%;
 }
 
-header li{
+.menu-container li{
     list-style : none;  /* list 동글뱅이 없애기 */
     padding-right:2em;
+}
+
+.submit-container{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    padding-bottom:2em;
+    border-bottom:1px solid #F2F2F2;
+}
+
+.submit-container .submit-textarea{
+    display:flex;
+    justify-content:flex-start;
+    flex-direction:row;
+    width:auto;
+}
+
+.submit-textarea div{
+    margin-right:1em;
+}
+
+#submit-button{
+    position:relative;
+    float:right;
+    background-color:#222222;
+    width:100px;
+    height:35px;
+    color:#B7B8BB;
+    outline:none;
+    border-radius:5px;    
+}
+
+#submit-button p{
+    font-size:15px;
+    position:absolute;
+    top:0%;
+    left:50%;
+    transform: translate(-50%, -40%);
+}
+
+#submit-button:hover{
+    background-color:#B7B8BB;
+    color:#222222;
 }
 
 header a:hover{
