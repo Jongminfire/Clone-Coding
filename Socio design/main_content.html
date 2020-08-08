@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <style>
@@ -49,11 +50,54 @@
             padding-bottom:3px;
             border-bottom:1px solid white;
         }
+
+        .slider{
+            position:relative;
+            width:100%;
+            overflow:hidden;
+        }
+
+        .slider-dot{
+            display:inline-block;
+            border:1px solid black;
+            background-color:white;
+            border-radius:50%;
+            margin:0px 2px 0px 2px;
+            width:9px;
+            height:9px;
+            cursor:pointer;
+        }
+        
+        .dot-container{
+            text-align:center;
+        }
+
     </style>
 </head>
 <body>
-    <div>
-        <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Knnox.jpg"></image>
+    <div class="slider">
+        <div class="slider-content" style="display:block;">
+            <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Knnox.jpg"></image>
+        </div>
+        <div class="slider-content" style="display:none;">
+            <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Capital_2.jpg"></image>
+        </div>
+        <div class="slider-content" style="display:none;">
+            <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Chaos.jpg"></image>
+        </div>
+        <div class="slider-content" style="display:none;">
+            <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_BC.jpg"></image>
+        </div>
+        <div class="slider-content" style="display:none;">
+            <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Twice.jpg"></image>
+        </div>
+    </div>
+    <div class = "dot-container" style="margin-top:1em;">
+        <span class="slider-dot" style="background-color:black;" onclick="changeSlide('0');">&nbsp;</span>
+        <span class="slider-dot" onclick="changeSlide('1');">&nbsp;</span>
+        <span class="slider-dot" onclick="changeSlide('2');">&nbsp;</span>
+        <span class="slider-dot" onclick="changeSlide('3');">&nbsp;</span>
+        <span class="slider-dot" onclick="changeSlide('4');">&nbsp;</span>
     </div>
     <div class ="grid-container" style="margin-top:20px;">
     <div id = "sonos-container">
@@ -76,3 +120,4 @@
     </div>
 </div>
 </body>
+</html>
