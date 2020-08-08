@@ -6,7 +6,7 @@
 
 <br>
 
-- #### Google : https://jongminfire.github.io/Clone-Coding/Socio%20design/main.html
+- #### Google : https://jongminfire.github.io/HTML_CSS/Clone%20Coding/Google/Google.html
 
-- #### Socio Design : [https://jongminfire.github.io/Clone-Coding/Socio%20design/main.html](https://jongminfire.github.io/Clone-Coding/Socio design/main.html)
+- #### Socio Design : https://jongminfire.github.io/Clone-Coding/Socio%20design/main.html
 
