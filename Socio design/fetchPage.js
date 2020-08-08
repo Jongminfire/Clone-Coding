@@ -36,6 +36,7 @@ function fetchPage(name){
         if(name === 'main_content.html')
         {
           origincolor();
+          showSlide();
         }
         else if(name === 'profile.html')
         {
