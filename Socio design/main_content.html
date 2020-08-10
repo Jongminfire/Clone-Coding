@@ -54,7 +54,16 @@
         .slider{
             position:relative;
             width:100%;
+            height:600px;
+        }
+
+        .slider .slider-content{
+            position:absolute;
+            left:0;
+            top:0;
             overflow:hidden;
+            width:100%;
+            height:100%;
         }
 
         .slider-dot{
@@ -76,19 +85,19 @@
 </head>
 <body>
     <div class="slider">
-        <div class="slider-content" style="display:block;">
+        <div class="slider-content" style="z-index:0; display:block; opacity:1;">
             <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Knnox.jpg"></image>
         </div>
-        <div class="slider-content" style="display:none;">
+        <div class="slider-content" style="z-index:0; display:none; opacity:0;" >
             <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Capital_2.jpg"></image>
         </div>
-        <div class="slider-content" style="display:none;">
+        <div class="slider-content" style="z-index:0; display:none; opacity:0;">
             <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Chaos.jpg"></image>
         </div>
-        <div class="slider-content" style="display:none;">
+        <div class="slider-content" style="z-index:0; display:none; opacity:0;">
             <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_BC.jpg"></image>
         </div>
-        <div class="slider-content" style="display:none;">
+        <div class="slider-content" style="z-index:0; display:none; opacity:0;">
             <image src = "https://sociodesign.co.uk/base/wp-content/uploads/2018/06/Hero_Twice.jpg"></image>
         </div>
     </div>
