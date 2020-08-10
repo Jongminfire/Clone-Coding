@@ -35,6 +35,7 @@ function fetchPage(name){
       setTimeout(function(){
         if(name === 'main_content.html')
         {
+          index=4;
           origincolor();
           showSlide();
         }
